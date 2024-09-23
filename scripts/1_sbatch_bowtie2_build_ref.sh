@@ -5,10 +5,10 @@
 #SBATCH -N 1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
-#SBATCH --output=<>
-#SBATCH --error=<>
+#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/2024-09-19_rnaseq_pbpGlpsB_verysens/logs/%x-%j.log
+#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/2024-09-19_rnaseq_pbpGlpsB_verysens/logs/%x-%j.err
 #SBATCH --mail-type=END
-#SBATCH --mail-user=<>
+#SBATCH --mail-user=soo.m@northeastern.edu
 
 ## Usage: sbatch 1_sbatch_bowtie2_build_ref.sh
 
