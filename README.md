@@ -7,6 +7,19 @@ ln -s $file input/
 done`
 
 2. Bowtie build
+Used script 1; default Bowtie-build parameters
 
+3. Sample sheet
+Script 2
 
-3. 
+4. Bowtie2 alignment
+
+Ran bowtie2 aligner with following arguments:
+--local
+--very-sensitive-local
+-p 8 
+-x $BT2_OUT_BASE 
+-q 
+-1 $r1 
+-2 $r2 
+-S $MAPPED_DIR/$name.sam
